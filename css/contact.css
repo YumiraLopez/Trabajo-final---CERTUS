@@ -1,0 +1,64 @@
+/* Secciones
+   ========================= */
+    main{
+        vertical-align: middle;
+        padding: 30px;
+        background-color: rgb(243, 245, 220);
+        text-align: center;
+    }
+    #formContacto{
+        width: 35%;
+        min-width: 260px;
+        display: inline-block;
+        text-align: left;
+        padding: 20px;
+    }
+    #ubicanos {
+        width: 50%;
+        min-width: 260px;
+        display: inline-block;
+        text-align: left;
+        padding: 20px;
+        color: rgb(44, 4, 155);
+    }
+
+    h3{
+color: rgb(109, 29, 29);
+text-align: center;
+    }
+
+/* Sección formulario
+   ========================= */
+   h2{
+    color: rgb(109, 29, 29);
+    text-align: center;
+   }
+    label{
+        display: block;
+        padding: 4px 0px;
+        margin-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        color:rgb(29, 8, 150);
+    }
+    input {
+        width: 100%;
+        height: 2em;
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+    input[type="submit"] {
+        border: none;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 40px;
+        width: auto;
+        margin-top: 14px;
+    }
+    input#bolAutorizo {
+        width: 20px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    

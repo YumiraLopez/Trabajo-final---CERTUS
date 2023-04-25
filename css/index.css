@@ -1,0 +1,49 @@
+/* Sección Catalogo
+   ========================= */
+section#catalogo {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* Articulos
+   ========================= */
+article{
+    display: inline-block;
+    width: 23%;
+    min-width: 200px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin: 20px 10px;
+    border: 2px #8f2623 solid;
+}
+article > h3 {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: #80601d;
+}
+.imgProduct {
+    width: 80%;
+    height: auto;
+}
+.precioOriginal {
+    font-size: 1.5em;
+    color:#438ac4;
+    text-decoration: line-through;
+}
+.precioDescuento {
+    font-size: 1.5em;
+    color: rgb(194, 39, 39);
+    font-weight: bold;
+}
+.precioFinal {
+    font-size: 2em;
+    color: #2c2fb3;
+    font-weight: bold;
+}
+article > button {
+    padding: 10px 20px;
+    background-color: #1b1512;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}

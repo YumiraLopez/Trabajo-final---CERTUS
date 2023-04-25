@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Muebles - Your Furniture</title>
+    <!-- Hoja de estilo con css-->
+    <link rel="stylesheet" href="estilos/custom.css">
+<!-- Estilo de Bootstrap-->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Estilo de iconos de Bootstrap-->
+<link rel="stylesheet" href="font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Se iniciará una conversación con el dueño por el aplicativo WhatsApp-->
+    <a id="chatWhatsApp" target="_blank" href="https://wa.me/51900469262?text=Hola%20quiero%20comprar%20un%20mueble">
+        <img src="image/recursos/WhatsApp.svg" alt="Iniciar convsersación por WhatsApp">
+    </a>
+    <!-- Encabezado -->
+    <header class="text-center bg-dark text-white p-3">
+        <h1>Your Furniture</h1>
+        <h2>Todo tipo de muebles para tu hogar soñado</h2>
+    </header>
+
+    <!-- Inicia la barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacténos</a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaCarrito"><i class="bi bi-cart4"></i>Carrito</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!--Ventana Modal del carrito-->
+<div class="modal fade" id="ventanaCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <picture>
+                <img id="imagenCarritoVacio" class="img-fluid mx-auto d-block" src="image/recursos/carrito-vacio.jpg" alt="carrito vacío">
+            </picture>
+         <p class="text-center"> Puedes seguir viendo las promociones </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="limpiarCarrito()"><i class="bi bi-trash3"></i>Limpiar</button>
+          <button type="button" class="btn btn-primary"><i class="bi bi-cash-coin"></i>Cotizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Barra de Notificaciónes
+    <div id="barNotificaciones">Venta de Muebles - Catalogo 2023</div> -->
+
+    <!-- Inicia el contenido principal -->
+    <main class="container text-center bg-secondary-subtle">
+
+        <!-- Sesiones de contenido -->
+        <section id="catalogo" class="row">
+
+            <!-- Mueble 01 -->
+            <article  class= "col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 1.JPG" alt="Cámara web">
+                </picture>
+
+                <h4>Juego de Sala Riveli 3-2-1 Cuerpos Marrón Asientos Fijos + 6 Cojines Decorativos</h4>
+                <p>
+                    <span class="precioOriginal">S/ 3,129.00</span> <span class="precioDescuento">-39%</span>
+                    <br><span class="precioFinal">S/ 1,899.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary" ><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 02 -->
+            <article class= "col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 2.webp" alt="Cámara web">
+                </picture>
+
+                <h4>Centro de Entretenimiento Jesse</h4>
+                <p>
+                    <span class="precioOriginal">S/ 3,793.00</span> <span class="precioDescuento">-28%</span>
+                    <br><span class="precioFinal">S/ 2,709.00</span>
+                </p>
+                <button  onclick="addCarrito(event)" class="btn btn-outline-primary" ><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 03 -->
+            <article class= "col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 3.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Sofá Valencia Blanco</h4>
+                <p>
+                    <span class="precioOriginal">S/ 1,499.00</span> <span class="precioDescuento">-33%</span>
+                    <br><span class="precioFinal">S/ 999.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 04 -->
+            <article class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 4.webp" alt="Cámara web">
+                </picture>
+
+                <h4>Cómoda Montreal 6 cajones Marrón</h4>
+                <p>
+                    <span class="precioOriginal">S/ 400.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 200.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 05 -->
+            <article class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 5.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Mesa Elizabeth para 6 sillas Vintage</h4>
+                <p>
+                    <span class="precioOriginal">S/ 1,427.00</span> <span class="precioDescuento">-16%</span>
+                    <br><span class="precioFinal">S/ 1,189.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 06 -->
+            <article  class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 6.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Juego de Comedor Liz 6 Sillas color Beige</h4>
+                <p>
+                    <span class="precioOriginal">S/ 3,849.00</span> <span class="precioDescuento">-30%</span>
+                    <br><span class="precioFinal">S/ 2,689.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+            
+            <!-- Mueble 07 -->
+            <article  class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 7.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Juego de Sala Athina 3-2-1 Cuerpos Color Gris</h4>
+                <p>
+                    <span class="precioOriginal">S/ 3,929.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 1,949.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 08 -->
+            <article  class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 8.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Sofá Venecia 3 Cuerpos Negro</h4>
+                <p>
+                    <span class="precioOriginal">S/ 2,000.00</span> <span class="precioDescuento">-25%</span>
+                    <br><span class="precioFinal">S/ 1,499.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 09 -->
+            <article  class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 9.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Cama Box Tarima Diván FORLI Elegant 2 Plz + 2 Almohadas</h4>
+                <p>
+                    <span class="precioOriginal">S/ 1,570.00</span> <span class="precioDescuento">-40%</span>
+                    <br><span class="precioFinal">S/ 929.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 10 -->
+            <article class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 10.webp" alt="Cámara web">
+                </picture>
+
+                <h4>Ropero Rebeca La Casa del Mueblero Blanco</h4>
+                <p>
+                    <span class="precioOriginal">S/ 2,800.00</span> <span class="precioDescuento">-29%</span>
+                    <br><span class="precioFinal">S/ 1,979.99</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 11 -->
+            <article class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 11.webp" alt="Cámara web">
+                </picture>
+
+                <h4>Cómoda Dario Negro Amaderado TV 40"</h4>
+                <p>
+                    <span class="precioOriginal">S/ 1,600.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">S/ 800.00</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+            <!-- Mueble 12 -->
+            <article class="col-xs-12 col-sm-6 col-md-4 col-xl-3 py-4">
+
+                <picture>
+                    <img class="img-fluid" src="image/productos/mueble 12.jpg" alt="Cámara web">
+                </picture>
+
+                <h4>Estante Zapatero Pelú Blanco 99cm</h4>
+                <p>
+                    <span class="precioOriginal">S/ 1,500.00</span> <span class="precioDescuento">-47%</span>
+                    <br><span class="precioFinal">S/ 789.89</span>
+                </p>
+                <button onclick="addCarrito(event)" class="btn btn-outline-primary"><i class="bi bi-bag-plus-fill"></i>Agregar al carrito</button>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer class="container-fluid bg-dark text-white p-1">
+       <div class="container p-0">
+        <p class="float end" >
+<a href="" class="#">Volver arriba</a>
+        </p>
+        <p class="text-center">Creado por Yumira López - 2023</p>
+        
+       </div>
+    </footer>
+
+  <!-- JavaScript de Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+<!-- JavaScript personalizado -->
+<script src="js/custom.js"></script>
+</body>
+
+</html>

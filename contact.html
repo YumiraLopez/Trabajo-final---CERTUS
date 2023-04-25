@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacténos - Your Furniture</title>
+     <!-- Hoja de estilo con css-->
+     <link rel="stylesheet" href="estilos/custom.css">
+     <!-- Estilo de Bootstrap-->
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <!-- Estilo de iconos de Bootstrap-->
+<link rel="stylesheet" href="font/bootstrap-icons.css">
+
+</head>
+
+<body>
+<!-- Se iniciará una conversación con el dueño por el aplicativo WhatsApp-->
+    <a id="chatWhatsApp" target="_blank" href="https://wa.me/51931238457?text=Hola%20quiero%20comprar%20ya!">
+        <img  src="image/recursos/WhatsApp.svg" alt="Iniciar convsersación por WhatsApp">
+    </a>
+
+ <!-- Inicia el Encabezado -->
+        <header class="text-center bg-dark text-white p-3">
+        <h1>Your Furniture</h1>
+        <h2>Todo tipo de muebles para tu hogar soñado</h2>
+    </header>
+
+    <!-- Inicia la barra de navegación -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacténos</a>
+            </li>
+          </ul>
+          <div class="d-flex" role="search">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaCarrito"><i class="bi bi-cart4"></i>Carrito</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Ventana Modal del carrito-->
+<div class="modal fade" id="ventanaCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <picture>
+              <img id="imagenCarritoVacio" class="img-fluid mx-auto d-block" src="image/recursos/carrito-vacio.jpg" alt="carrito vacío">
+          </picture>
+       <p class="text-center"> Puedes seguir viendo las promociones </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"><i class="bi bi-trash3"></i>Limpiar</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-cash-coin"></i>Cotizar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Inicia el contenido principal -->
+ <main class="container bg-secondary-subtle">
+<div class="row">
+
+        <!-- Los datos de contacto-->
+        <section id="ubicanos" class="col-xs-12 col-sm-12 col-md-6 col-lg-7 py-5 px-4">
+
+            <h3>UBICACIÓN</h3>
+
+            <p>Av. Caminos del Inca 1656<br>
+                Surco - Lima - Perú
+            </p>
+            <p>Av. Del Ejército 956<br>
+                Miraflores - Lima - Perú
+            </p>
+            <p>Télefono: 940 552 268 / 900 469 262</p>
+
+             <!-- Enlaces de las direcciones en google maps -->
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7882500594174!2d-76.98424978255615!3d-12.126635799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c78a189133bb%3A0xd082a542c5c56ebd!2sAv.%20Caminos%20del%20Inca%201656%2C%20Santiago%20de%20Surco%2015039!5e0!3m2!1ses!2spe!4v1680213128170!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9951812186473!2d-77.05105678467228!3d-12.112481946425543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c836ee8de3bb%3A0xb93f775b701c7ac6!2sAv.%20del%20Ej%C3%A9rcito%20956%2C%20Miraflores%2015074!5e0!3m2!1ses!2spe!4v1680213275409!5m2!1ses!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <!-- El formulario de contacto -->
+        <section id="formContacto" class="col-xs-12 col-sm-12 col-md-6 col-lg-5 py-5 px-4">
+
+            <!-- Formulario de registo -->
+            <form action="contactoRegistro.html" method="post">
+
+                <!-- Input / Se ingresan los datos -->
+                <div class="mb-3">
+                    <H2>
+                        INGRESE SUS DATOS
+                    </H2>
+                    <label for="txtNombre" class="form-label">Nombres</label>
+                    <input class="form-control" type="text" name="txtNombre" id="txtNombre" maxlength=50 required>
+                </div>
+                <div class="mb-3">
+                    <label for="txtApellido" class="form-label">Apellidos</label>
+                    <input class="form-control" type="text" name="txtApellido" id="txtApellido" autocomplete="off" maxlength=54 required>
+                </div>
+                <div class="mb-3">
+                    <label for="txtEmail" class="form-label" >Correo Electrónico</label>
+                    <input class="form-control" type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength=128 required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="numPhone" class="form-label">Teléfono/Celular</label>
+                    <input class="form-control" type="tel" name="numPhone" id="numPhone" maxlength="13" minlength="7">
+                </div>
+
+                <!-- Select / Lista de selección-->
+                <div class="mb-3">
+                    <label for="txtAsunto" class="form-label">Seleccione el asunto:</label>
+                    <select class="form-select" name="txtAsunto" id="txtAsunto" required>
+                        <option value="">Consulta de promociones vigentes</option>
+                        <option value="comprarMayor">Comprar muebles por mayor</option>
+                        <option value="consultaDevolucion">Consulta para devolución</option>
+                        <option value="consultaGeneral">Consulta general</option>
+                    </select>
+                </div>
+
+                <!-- TextArea / Se puede ingresar un texto-->
+
+                <div class="mb-3">
+                    <label for="bodyDetalle" class="form-label">Ingrese el mensaje</label>
+                    <textarea class="form-control" name="bodyDetalle" id="bodyDetalle" cols="30" rows="8" required></textarea>
+                </div>
+
+                <!-- Input Checkbox/ Autorización de la publicidad -->
+                <div class="mb-3">
+                    <input class="form-check-input" type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo" class="form-check-label">Autorizo el envío de publicidad e información comercial</label>
+                </div>
+
+                <!-- Input Submit / Botón de enviar -->
+                <div class="mb-3">
+                    <input class="btn btn-primary" type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </section>
+</div>
+
+    </main>
+
+       <!-- Pie de página -->
+
+       <footer class="container-fluid bg-dark text-white p-1">
+        <div class="container p-0">
+         <p class="float end" >
+ <a href="" class="#">Volver arriba</a>
+         </p>
+         <p class="text-center">Creado por Yumira López - 2023</p>
+         
+        </div>
+     </footer>
+
+</body>
+<!-- JavaScript de Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- JavaScript personalizado -->
+<script src="js/custom.js"></script>
+</html>

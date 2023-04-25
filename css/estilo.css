@@ -1,0 +1,102 @@
+/* Importo fuente de Google
+   ========================= */
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* General
+   ========================= */
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: antiquewhite;
+    }
+
+/* Encabezado
+   ========================= */
+    header {
+        padding: 40px 15px;
+        background-color: #D85F1A;
+        background-image: url(../image/recursos/header.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    header > h1 {
+        font-family: "Lilita One", sans-serif;
+        font-size: 3em;
+        margin: 0px;
+        text-align: center;
+        color: #fffffff6;
+        text-shadow: rgb(9, 48, 99) 3px 3px;
+    }
+    header > h2 {
+        text-align: center;
+        margin: 5px 0px 0px;
+        color: white;
+    }
+
+/* Barra de notificaciones
+   ========================= */
+    #barNotificaciones{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        background: #000000;
+        text-align: center;
+        padding: 8px;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+
+
+/* Barra de navegación
+   ========================= */
+    #navegar {
+        text-align: center;
+        padding: 14px 10px 14px 0px;
+        margin: 0;
+        background-color: #8081d1;
+    }
+    #navegar > li {
+        display: inline;
+        position: relative;
+        padding: 10px 16px;
+        margin-left: 10px;
+        border-radius: 20px;
+        font-family: sans-serif;
+        color: #fff;
+    }
+    #navegar > li:hover{
+        background-color: #154686;
+    } 
+    #navegar > li > a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+/* Contenido principal
+   ========================= */
+    main{
+        max-width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Chat de WhatsApp
+   ========================= */
+    #chatWhatsApp{
+        width: 64px;
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+/* Pie de página
+   ========================= */
+    footer{
+        background-color: #242121;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }

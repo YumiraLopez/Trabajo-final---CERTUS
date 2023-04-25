@@ -1,0 +1,36 @@
+
+/* Título
+   ========================= */
+.title {
+text-align: center;
+color: rgb(28, 171, 214);
+border-bottom: #0e368d solid 2px;
+margin: 35px auto 35px;
+}
+
+/* Texto 
+   ========================= */
+
+h3{
+    text-align: center;
+    width: initial;
+    float: none;
+    display: block;
+    margin: 35px 35px;
+}
+/* Imágen
+   ========================= */
+.imageous {
+
+    display: block;
+    width: 40%;
+    float: none;
+    margin: auto auto 50px;
+
+    /* contenido principal
+   ========================= */
+
+}
+main{
+    background-color: rgb(243, 245, 220);
+}

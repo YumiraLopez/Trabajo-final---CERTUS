@@ -1,0 +1,62 @@
+
+/*CABECERA */
+
+header {
+    background-image: url(../image/recursos/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*CHAT WHATSAPP */
+#chatWhatsApp{
+    width: 64px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+/*IMAGEN CARRITO */
+
+#imagenCarritoVacio{
+    width: 80%;
+}
+
+#ventanaCarrito span {
+    font-size: 1em;
+
+}
+
+#ventanaCarrito .precioDescuento,  #ventanaCarrito .precioFinal{
+    font-size: 1em;
+    text-align: right;
+}
+
+/*ARTICULOS */
+
+article{
+    margin-bottom: 2em;
+}
+
+article > picture > img {
+max-width: 90% !important;
+margin-bottom: 1em;
+}
+
+/*PRECIO*/ 
+
+.precioOriginal {
+    font-size: 1.5em;
+    color:#438ac4;
+    text-decoration: line-through;
+}
+.precioDescuento {
+    font-size: 1.5em;
+    color: rgb(194, 39, 39);
+    font-weight: bold;
+}
+.precioFinal {
+    font-size: 2em;
+    color: #2c2fb3;
+    font-weight: bold;
+}
